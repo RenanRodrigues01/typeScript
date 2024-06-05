@@ -9,15 +9,10 @@ interface InterfaceProduct {
   descricao: string;
   garantia: string;
   seguroAcidentes: boolean;
-  empresaFabricante: InterfaceManufacturer;
-  empresaMontadora: InterfaceManufacturer;
+  empresaFabricante: InterfaceCompany;
+  empresaMontadora: InterfaceCompany;
 };
-interface InterfaceManufacturer {
-  nome: string;
-  fundacao: number;
-  pais: string;
-};
-interface InterfaceAutomaker {
+interface InterfaceCompany {
   nome: string;
   fundacao: number;
   pais: string;
